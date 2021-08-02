@@ -9,6 +9,8 @@ const db = mysql.createConnection({
 
 });
 
+
+// Connection à la BDD
 db.connect((err) => {
 
     if(err){
