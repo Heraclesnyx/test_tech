@@ -29,6 +29,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projets\JavaScript\test_tech\Ex2\server\utils" />
+      <recent name="C:\wamp64\www\Projets\JavaScript\test_tech\Ex2\server" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,7 +43,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627654370300</updated>
-      <workItem from="1627910595739" duration="4756000" />
+      <workItem from="1627910595739" duration="4836000" />
+      <workItem from="1627990852665" duration="4134000" />
     </task>
     <servers />
   </component>
