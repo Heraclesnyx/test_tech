@@ -21,4 +21,4 @@ app.use(router);
 
 sequelize.sync();
 
-app.listen(3000);  //Ecoute sur le poste 3000 de localhost
+app.listen(5000);  //Ecoute sur le port 5000

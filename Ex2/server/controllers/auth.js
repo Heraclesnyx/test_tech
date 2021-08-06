@@ -6,6 +6,7 @@ import User from '../models/user.js';
 
 
 //Partie enregistrement d'un utilisateur
+//l'inscription  enregistre les utilisateurs dans la base de données. Tout d'abord, il vérifie si l'e-mail fourni a déjà été enregistré. Ensuite, si l'e-mail et le mot de passe ont été reçus, il hache le mot de passe et stocke l'utilisateur dans la base de données.
 const signup =  (req, res) => {
 
     const regexPassword = new  RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})"); //regex pour sécuriser un peu le formulaire (8 caractères minimum, 1 majuscule, 1 minuscule et 1 caractère spéciale obligatoire
@@ -51,6 +52,7 @@ const signup =  (req, res) => {
 };
 
 //Partie Login
+//Login  gère les demandes de connexion. Il commence par vérifier si l'email correspond à un utilisateur de la base de données. Si tel est le cas, il hache le mot de passe et le compare au mot de passe utilisateur dans la base de données. S'ils correspondent, il répond avec un jeton secret temporaire.
 const login = (req,res) => {
 
     //Verifier si email exist dans la bdd
@@ -81,6 +83,7 @@ const login = (req,res) => {
 
 
 //partie authentification
+//isAuth demande le jeton secret et, s'il est fourni, procède à sa vérification. Si tout se passe bien, il répondra enfin avec la ressource privée. Dans ce cas, cette ressource sera juste un message contenant "voici votre ressource". Cela suffit pour notre preuve de concept.
 const isAuth = (req, res) => {
 
     const authHeader = req.get("Authorization");
