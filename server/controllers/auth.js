@@ -10,7 +10,7 @@ const signup =  (req, res) => {
 
     //Verifier si le mail exist
     User.findOne({ where: {
-        email: req.body.email,
+            email: req.body.email,
         }})
         .then(dbUser =>{
             if(dbUser) {
@@ -52,7 +52,7 @@ const login = (req,res) => {
 
     //Verifier si email exist dans la bdd
     User.findOne({ where: {
-        email: req.body.email,
+            email: req.body.email,
         }})
         .then(dbUser => {
             if(!dbUser){

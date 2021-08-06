@@ -34,11 +34,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Ex2" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projets\JavaScript\test_tech\Ex2\mobile" />
+      <recent name="C:\wamp64\www\Projets\JavaScript\test_tech\Ex2\server" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projets\JavaScript\test_tech\Ex2\mobile" />
+      <recent name="C:\wamp64\www\Projets\JavaScript\test_tech\Ex2\mobile\screens" />
       <recent name="C:\wamp64\www\Projets\JavaScript\test_tech\Ex2\server\utils" />
       <recent name="C:\wamp64\www\Projets\JavaScript\test_tech\Ex2\server" />
     </key>
@@ -53,11 +61,15 @@
       <updated>1627654370300</updated>
       <workItem from="1627910595739" duration="4836000" />
       <workItem from="1627990852665" duration="4459000" />
-      <workItem from="1628078682513" duration="3303000" />
+      <workItem from="1628078682513" duration="9374000" />
+      <workItem from="1628092653288" duration="2181000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
 </project>
