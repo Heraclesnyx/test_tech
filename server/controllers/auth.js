@@ -8,7 +8,7 @@ import User from '../models/user.js';
 //Partie enregistrement d'un utilisateur
 const signup =  (req, res) => {
 
-    const regexPassword = new  RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})"); //regex pour sécuriser un peu le formulaire (8 caracy=tère minimum, 1 majuscule, 1 minuscule et 1 caractère spéciale obligatoire
+    const regexPassword = new  RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})"); //regex pour sécuriser un peu le formulaire (8 caractères minimum, 1 majuscule, 1 minuscule et 1 caractère spéciale obligatoire
 
     //Verifier si le mail exist
     User.findOne({ where: {
