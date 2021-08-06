@@ -25,6 +25,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1w2QjYeqIvs7utnA9Aqlq2Vx7zE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Ex2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -63,6 +64,7 @@
       <workItem from="1627990852665" duration="4459000" />
       <workItem from="1628078682513" duration="9374000" />
       <workItem from="1628092653288" duration="2181000" />
+      <workItem from="1628253273096" duration="784000" />
     </task>
     <servers />
   </component>
