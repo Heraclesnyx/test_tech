@@ -25,6 +25,7 @@ const signup =  (req, res) => {
                         return res.status(500).json({message: "Le mot de passe n\'a pas pu être haché"});
                     }
                     else if(passwordHash){
+                        //creation du user ds bdd avec le mail et le password hasher
                         return User.create(({
                             email: req.body.email,
                             password: passwordHash,

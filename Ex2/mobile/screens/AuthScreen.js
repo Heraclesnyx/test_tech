@@ -8,7 +8,6 @@ const API_URL = Platform.OS === 'android' ? 'http://localhost:5000' : 'http://10
 
 const AuthScreen = () => {
     const [email, setEmail] = useState('');
-    const regexPassword = new  RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})"); //regex pour sécuriser un peu le formulaire (8 caracy=tère minimum, 1 majuscule, 1 minuscule et 1 caractère spéciale obligatoire
     const [password, setPassword] = useState('');
 
     const [isError, setIsError] = useState(false);
@@ -51,7 +50,7 @@ const AuthScreen = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(payload.replace(regexPassword)),
+            body: JSON.stringify(payload),
         })
             .then(async res => {
                 try {
@@ -86,10 +85,10 @@ const AuthScreen = () => {
                 <View style={globalStyles.inputs}>
                     <TextInput style={globalStyles.input} placeholder="Email" autoCapitalize="none" onChangeText={setEmail} />
                     <TextInput secureTextEntry={true} style={globalStyles.input} placeholder="Password" onChangeText={setPassword} />
-                    {!isLogin && <TextInput style={globalStyles.input} placeholder="Confirmer password" onChangeText={setPassword} />}
+                    {!isLogin && <TextInput secureTextEntry={true} style={globalStyles.input} placeholder="Confirmer password" onChangeText={setPassword} />}
                     <Text style={[globalStyles.message, {color: isError ? 'red' : 'green'}]}>{message ? getMessage() : null}</Text>
                     <TouchableOpacity style={globalStyles.button} onPress={onSubmit}>
-                        <Text style={globalStyles.buttonText}>Done</Text>
+                        <Text style={globalStyles.buttonText}>Submit</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={globalStyles.buttonAlt} onPress={onChange}>
                         <Text style={globalStyles.buttonAltText}>{isLogin ? 'Sign Up' : 'Log In'}</Text>
