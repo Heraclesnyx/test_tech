@@ -4,7 +4,7 @@ import sequelize from './utils/mysql.js';
 
 import router from './routes/routes.js';
 
-const app = express();
+const app = express(); //express permet de générer les route sur l'api
 
 app.use(express.urlencoded({ extended: true }));
 
